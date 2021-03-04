@@ -1,0 +1,171 @@
+// fonts importation
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Manrope&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+// font-family: 'Kumbh Sans', sans-serif;
+// font-family: 'Manrope', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Lato', sans-serif;
+// variables
+$color-1:#A5D6E4;
+$color-2:#210A72;
+$color-3:#57F1B1;
+$color-4:#E68244;
+
+// placehorder
+
+%no-margin{
+    margin: 0;
+    padding: 0;
+}
+
+
+// header style
+body{
+    margin:0;
+    padding:0;
+}
+
+.parent-header{
+    background-color: $color-1;
+    width: 100%;
+    
+    .header{
+        max-width: 1140px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px auto;
+
+        img{
+            height:50px
+        }
+        
+        &__menu{
+            display:flex;
+            padding:20px;
+            a{
+                display:block;
+                text-decoration: none;
+                color:$color-2;
+                padding:10px;
+                font-family: 'Kumbh Sans', sans-serif;
+                font-weight: 700;
+                border-bottom: 4px solid transparent;
+                transition: .9s all;
+                &:hover{
+                    border-bottom: 4px solid $color-2;
+                }
+            }
+        }
+
+        .header__contact{
+            display:flex;
+            font-family: 'Kumbh Sans', sans-serif;
+            text-transform: uppercase;
+
+            h4{
+                
+                color:$color-2;
+                @extend %no-margin;
+                padding:20px 10px;
+            }
+            a{
+                background-color: $color-2;
+                color:$color-1;
+                text-decoration: none;
+                display: block;
+                padding:20px 10px;
+            }
+        }
+    }
+}
+
+
+// bloc home style
+
+.home{
+    background-image: url('/img/826909-hospital-wallpapers-1920x1080-hd.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 70vh;
+
+    .home__text{
+        padding:50px;
+        color:white;
+        font-family: 'Lato', sans-serif;
+        h4{
+            font-size:5rem;
+            @extend %no-margin;
+        }
+
+        .home__links{
+            display: flex;
+            justify-content:center
+        }
+
+        .home__link{
+            text-decoration: none;
+            font-size:1rem;
+            padding:15px 35px;
+            background:$color-1;
+            margin:10px 30px;
+            color:$color-2;
+            font: {
+                family: 'Roboto', sans-serif;
+                weight:700;
+            }
+        }
+    }
+}
+
+
+// bloc 'ce que nous avons' style
+
+
+.parent_whatWeHave{
+    width:100%;
+    background-color: $color-2;
+
+    .whatWeHave{
+        display: flex;
+        justify-content:center;
+        max-width: 1140px;
+        margin:auto;
+
+        &__option{
+            padding:10px;
+            display:flex;
+            background-color: $color-2;
+            color: $color-1;
+            align-items:center;
+            font-family: 'Lato', sans-serif;
+
+            .fas{
+                font-size:80px;
+                padding:0px 20px;
+                display:block;
+            }
+
+            .option__text{
+                padding:0px 30px 0px 0px;
+                color: $color-1; 
+            }
+
+        &:nth-child(2){
+                background-color: $color-1;
+                color: $color-2;
+                .option__text{
+                    color: $color-2
+                }
+            }
+        
+        }
+    }
+}

@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Manrope&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+.home .home__text h4, .parent-header .header .header__contact h4 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.parent-header {
+  background-color: #A5D6E4;
+  width: 100%;
+}
+.parent-header .header {
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+}
+.parent-header .header img {
+  height: 50px;
+}
+.parent-header .header__menu {
+  display: flex;
+  padding: 20px;
+}
+.parent-header .header__menu a {
+  display: block;
+  text-decoration: none;
+  color: #210A72;
+  padding: 10px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  border-bottom: 4px solid transparent;
+  transition: 0.9s all;
+}
+.parent-header .header__menu a:hover {
+  border-bottom: 4px solid #210A72;
+}
+.parent-header .header .header__contact {
+  display: flex;
+  font-family: "Kumbh Sans", sans-serif;
+  text-transform: uppercase;
+}
+.parent-header .header .header__contact h4 {
+  color: #210A72;
+  padding: 20px 10px;
+}
+.parent-header .header .header__contact a {
+  background-color: #210A72;
+  color: #A5D6E4;
+  text-decoration: none;
+  display: block;
+  padding: 20px 10px;
+}
+
+.home {
+  background-image: url("/img/826909-hospital-wallpapers-1920x1080-hd.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+.home .home__text {
+  padding: 50px;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+.home .home__text h4 {
+  font-size: 5rem;
+}
+.home .home__text .home__links {
+  display: flex;
+  justify-content: center;
+}
+.home .home__text .home__link {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 15px 35px;
+  background: #A5D6E4;
+  margin: 10px 30px;
+  color: #210A72;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.parent_whatWeHave {
+  width: 100%;
+  background-color: #210A72;
+}
+.parent_whatWeHave .whatWeHave {
+  display: flex;
+  justify-content: center;
+  max-width: 1140px;
+  margin: auto;
+}
+.parent_whatWeHave .whatWeHave__option {
+  padding: 10px;
+  display: flex;
+  background-color: #210A72;
+  color: #A5D6E4;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+.parent_whatWeHave .whatWeHave__option .fas {
+  font-size: 80px;
+  padding: 0px 20px;
+  display: block;
+}
+.parent_whatWeHave .whatWeHave__option .option__text {
+  padding: 0px 30px 0px 0px;
+  color: #A5D6E4;
+}
+.parent_whatWeHave .whatWeHave__option:nth-child(2) {
+  background-color: #A5D6E4;
+  color: #210A72;
+}
+.parent_whatWeHave .whatWeHave__option:nth-child(2) .option__text {
+  color: #210A72;
+}
+
+/*# sourceMappingURL=style.css.map */
