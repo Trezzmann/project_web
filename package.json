@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch css/style.scss:css/style.css --style expanded"
+    "sass":"sass --watch css/style_services.scss:css/style_services.css --style expanded"
   },
   "keywords": [],
   "author": "",

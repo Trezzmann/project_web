@@ -1,0 +1,65 @@
+@import '_header';
+@import '_footer';
+
+
+// bloc about style
+
+.about{
+    max-width: $max-width;
+    margin:150px auto;
+    display: flex;
+
+    &__item{
+
+        &>img{
+            max-width:450px;
+        }
+        h4{
+            font-size: 4rem;
+            margin: 0;
+        }
+        p{
+            font-weight: 500;
+        }
+    }
+}
+
+
+// bloc historique 
+
+.historique{
+    max-width: $max-width;
+    margin:auto;
+
+    h4{
+        font-size: 4rem;
+    }
+
+    p{
+        font-weight: 500;
+    }
+}
+
+
+// bloc partener
+.parent-partener{
+    max-width: $max-width;
+    margin:auto;
+
+    h4{
+        font-size: 4rem;
+    }
+    .partener{
+        
+        display:flex;
+        justify-content:space-between;
+
+        &__item{
+            width:200px;
+            height:200px;
+            background-image: url('/img/826909-hospital-wallpapers-1920x1080-hd.jpg');
+            background-position:center center;
+            background-size: cover;
+        }
+    }
+}

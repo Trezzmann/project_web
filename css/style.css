@@ -12,7 +12,7 @@ body {
 }
 
 .parent-header {
-  background-color: #A5D6E4;
+  background-color: white;
   position: fixed;
   top: 0;
   z-index: 100;
@@ -20,9 +20,9 @@ body {
   margin: auto;
 }
 .parent-header .header {
-  max-width: 900px;
+  max-width: 1000px;
   display: flex;
-  background-color: #A5D6E4;
+  background-color: white;
   justify-content: space-between;
   align-items: center;
   margin: auto;
@@ -37,15 +37,15 @@ body {
 .parent-header .header__menu a {
   display: block;
   text-decoration: none;
-  color: #210A72;
+  color: #05001a;
   padding: 10px;
   font-family: "Kumbh Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   border-bottom: 4px solid transparent;
   transition: 0.9s all;
 }
 .parent-header .header__menu a:hover {
-  border-bottom: 4px solid #210A72;
+  border-bottom: 4px solid #05001a;
 }
 .parent-header .header .header__contact {
   display: flex;
@@ -53,12 +53,12 @@ body {
   text-transform: uppercase;
 }
 .parent-header .header .header__contact h4 {
-  color: #210A72;
+  color: #05001a;
   padding: 20px 10px;
 }
 .parent-header .header .header__contact a {
-  background-color: #210A72;
-  color: #A5D6E4;
+  background-color: #05001a;
+  color: white;
   text-decoration: none;
   display: block;
   padding: 20px 10px;
@@ -90,35 +90,35 @@ body {
 .home .home__text .home__link {
   text-decoration: none;
   padding: 15px 35px;
-  background: #A5D6E4;
+  background: white;
   margin: 10px 30px;
   border: 2px solid transparent;
-  color: #210A72;
+  color: #05001a;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 500;
   font-size: 1rem;
 }
 .home .home__text .home__link:hover {
-  border: 2px solid #A5D6E4;
-  color: #A5D6E4;
-  background-color: #210A72;
+  border: 2px solid white;
+  color: white;
+  background-color: #05001a;
 }
 
 .parent_whatWeHave {
   width: 100%;
-  background-color: #210A72;
+  background-color: #05001a;
 }
 .parent_whatWeHave .whatWeHave {
   display: flex;
   justify-content: center;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
 }
 .parent_whatWeHave .whatWeHave__option {
   padding: 10px;
   display: flex;
-  background-color: #210A72;
-  color: #A5D6E4;
+  background-color: #05001a;
+  color: white;
   align-items: center;
   font-family: "Kumbh Sans", sans-serif;
 }
@@ -129,19 +129,19 @@ body {
 }
 .parent_whatWeHave .whatWeHave__option .option__text {
   padding: 0px 30px 0px 0px;
-  color: #A5D6E4;
+  color: white;
 }
 .parent_whatWeHave .whatWeHave__option:nth-child(2) {
-  background-color: #A5D6E4;
-  color: #210A72;
+  background-color: white;
+  color: #05001a;
 }
 .parent_whatWeHave .whatWeHave__option:nth-child(2) .option__text {
-  color: #210A72;
+  color: #05001a;
 }
 
 .parent-form {
   margin: 50px auto;
-  max-width: 900px;
+  max-width: 1000px;
   display: flex;
 }
 .parent-form .form__image {
@@ -157,8 +157,8 @@ body {
   background-color: white;
 }
 .parent-form .form__block h4 {
-  color: #A5D6E4;
-  background-color: #210A72;
+  color: white;
+  background-color: #05001a;
   padding: 20px 25px;
   font-size: 1.4rem;
   margin-bottom: 20px;
@@ -173,14 +173,14 @@ body {
 .parent-form .form__block form input[type=text], .parent-form .form__block form textarea {
   padding: 15px 10px;
   margin: 10px 0px;
-  color: #210A72;
+  color: #05001a;
   border: 1px solid transparent;
   background-color: rgba(238, 238, 238, 0.61);
   font-size: 1rem;
   font-family: "Kumbh Sans", sans-serif;
 }
 .parent-form .form__block form input[type=text]:focus, .parent-form .form__block form textarea:focus {
-  outline: 3px solid #210A72;
+  outline: 3px solid #05001a;
 }
 .parent-form .form__block form input[type=text] {
   width: 300px;
@@ -191,8 +191,8 @@ body {
 .parent-form .form__block button {
   width: 200px;
   padding: 15px 25px;
-  background-color: #210A72;
-  color: #A5D6E4;
+  background-color: #05001a;
+  color: white;
   font-size: 1rem;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
@@ -209,10 +209,10 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 4rem;
   margin: 0;
-  color: #210A72;
+  color: #05001a;
 }
 .parent-galerie .galerie {
-  max-width: 900px;
+  max-width: 1000px;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -246,13 +246,13 @@ body {
 }
 .parent-whatWeDo > h4 {
   font-size: 4rem;
-  color: #210A72;
+  color: #05001a;
   text-align: center;
 }
 .parent-whatWeDo .whatWeDo {
   font-family: "Kumbh Sans", sans-serif;
   display: flex;
-  max-width: 900px;
+  max-width: 1000px;
   justify-content: space-between;
   margin: auto;
 }
@@ -260,7 +260,7 @@ body {
   padding: 40px;
   width: 280px;
   text-align: center;
-  color: #210A72;
+  color: #05001a;
   background-color: white;
 }
 .parent-whatWeDo .whatWeDo__item i {
@@ -276,18 +276,19 @@ body {
 
 .parent-footer {
   width: 100%;
-  background-color: #A5D6E4;
+  background-color: #05001a;
+  margin-top: 50px;
 }
 .parent-footer .footer {
-  max-width: 900px;
+  max-width: 1000px;
   min-height: 300px;
-  margin-top: auto;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
 }
-.parent-footer .footer h4 {
+.parent-footer .footer__item {
   text-align: center;
-  padding-top: 90px;
-  font-size: 3rem;
-  color: #210A72;
+  color: white;
 }
 
 .btn-goUp {
@@ -300,8 +301,8 @@ body {
   position: fixed;
   right: 20px;
   bottom: 100px;
-  background-color: #210A72;
-  color: #A5D6E4;
+  background-color: #05001a;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

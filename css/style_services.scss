@@ -1,0 +1,42 @@
+@import 'header';
+@import 'footer';
+
+// bloc ce que nous faisons
+
+.parent-whatWeDo{
+    width: 100%;
+    // font-family: 'Kumbh Sans', sans-serif;
+    margin-top:150px;
+    &>h4{
+        font-size:4rem;
+        color:$color-2;
+        text-align:center;
+    }
+    .whatWeDo{
+        // font-family: 'Kumbh Sans', sans-serif;
+        display: flex;
+        max-width: $max-width;
+        justify-content:space-between;
+        margin: auto;
+
+        &__item{
+            padding:40px;
+            width:280px;
+            text-align: center;
+            color:$color-2;
+            background-color: white;
+            i{
+                font-size: 3rem;
+            }
+
+            h4{
+                margin-top: 5px;
+                font-size: 2rem;
+            }
+
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
