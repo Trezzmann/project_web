@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Manrope&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
-.home .home__text h4, .parent-header .header .header__contact h4 {
+.parent-form .form__block h4, .home .home__text h4, .parent-header .header .header__contact h4 {
   margin: 0;
   padding: 0;
 }
@@ -8,18 +8,24 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #f3f3f3;
 }
 
 .parent-header {
   background-color: #A5D6E4;
+  position: fixed;
+  top: 0;
+  z-index: 100;
   width: 100%;
+  margin: auto;
 }
 .parent-header .header {
-  max-width: 1140px;
+  max-width: 900px;
   display: flex;
+  background-color: #A5D6E4;
   justify-content: space-between;
   align-items: center;
-  margin: 0px auto;
+  margin: auto;
 }
 .parent-header .header img {
   height: 50px;
@@ -67,11 +73,12 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 70vh;
+  margin-top: 80px;
 }
 .home .home__text {
   padding: 50px;
   color: white;
-  font-family: "Lato", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
 }
 .home .home__text h4 {
   font-size: 5rem;
@@ -82,13 +89,19 @@ body {
 }
 .home .home__text .home__link {
   text-decoration: none;
-  font-size: 1rem;
   padding: 15px 35px;
   background: #A5D6E4;
   margin: 10px 30px;
+  border: 2px solid transparent;
   color: #210A72;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.home .home__text .home__link:hover {
+  border: 2px solid #A5D6E4;
+  color: #A5D6E4;
+  background-color: #210A72;
 }
 
 .parent_whatWeHave {
@@ -98,7 +111,7 @@ body {
 .parent_whatWeHave .whatWeHave {
   display: flex;
   justify-content: center;
-  max-width: 1140px;
+  max-width: 900px;
   margin: auto;
 }
 .parent_whatWeHave .whatWeHave__option {
@@ -107,7 +120,7 @@ body {
   background-color: #210A72;
   color: #A5D6E4;
   align-items: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
 }
 .parent_whatWeHave .whatWeHave__option .fas {
   font-size: 80px;
@@ -124,6 +137,171 @@ body {
 }
 .parent_whatWeHave .whatWeHave__option:nth-child(2) .option__text {
   color: #210A72;
+}
+
+.parent-form {
+  margin: 50px auto;
+  max-width: 900px;
+  display: flex;
+}
+.parent-form .form__image {
+  background-image: url("/img/for-professionals-1000x700.jpg");
+  background-position: center center;
+  background-size: cover;
+  width: 40%;
+}
+.parent-form .form__block {
+  flex: 1;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 900;
+  background-color: white;
+}
+.parent-form .form__block h4 {
+  color: #A5D6E4;
+  background-color: #210A72;
+  padding: 20px 25px;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+.parent-form .form__block form {
+  padding: 0px 30px;
+}
+.parent-form .form__block form div {
+  display: flex;
+  justify-content: space-between;
+}
+.parent-form .form__block form input[type=text], .parent-form .form__block form textarea {
+  padding: 15px 10px;
+  margin: 10px 0px;
+  color: #210A72;
+  border: 1px solid transparent;
+  background-color: rgba(238, 238, 238, 0.61);
+  font-size: 1rem;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.parent-form .form__block form input[type=text]:focus, .parent-form .form__block form textarea:focus {
+  outline: 3px solid #210A72;
+}
+.parent-form .form__block form input[type=text] {
+  width: 300px;
+}
+.parent-form .form__block form textarea {
+  width: 650px;
+}
+.parent-form .form__block button {
+  width: 200px;
+  padding: 15px 25px;
+  background-color: #210A72;
+  color: #A5D6E4;
+  font-size: 1rem;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  border: none;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.parent-galerie {
+  width: 100%;
+}
+.parent-galerie h4 {
+  text-align: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 4rem;
+  margin: 0;
+  color: #210A72;
+}
+.parent-galerie .galerie {
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.parent-galerie .galerie__item {
+  background-image: url("/img/for-professionals-1000x700.jpg");
+  background-position: center center;
+  background-size: cover;
+  margin: 15px auto;
+  width: 300px;
+  height: 300px;
+}
+
+.parent-urgence {
+  background-image: url("/img/826909-hospital-wallpapers-1920x1080-hd.jpg");
+  background-position: center center;
+  background-size: cover;
+  margin-top: 80px;
+  max-width: 100%;
+  padding: 100px;
+}
+.parent-urgence .urgence {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.parent-whatWeDo {
+  width: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.parent-whatWeDo > h4 {
+  font-size: 4rem;
+  color: #210A72;
+  text-align: center;
+}
+.parent-whatWeDo .whatWeDo {
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  max-width: 900px;
+  justify-content: space-between;
+  margin: auto;
+}
+.parent-whatWeDo .whatWeDo__item {
+  padding: 40px;
+  width: 280px;
+  text-align: center;
+  color: #210A72;
+  background-color: white;
+}
+.parent-whatWeDo .whatWeDo__item i {
+  font-size: 3rem;
+}
+.parent-whatWeDo .whatWeDo__item h4 {
+  margin-top: 5px;
+  font-size: 2rem;
+}
+.parent-whatWeDo .whatWeDo__item p {
+  text-align: center;
+}
+
+.parent-footer {
+  width: 100%;
+  background-color: #A5D6E4;
+}
+.parent-footer .footer {
+  max-width: 900px;
+  min-height: 300px;
+  margin-top: auto;
+}
+.parent-footer .footer h4 {
+  text-align: center;
+  padding-top: 90px;
+  font-size: 3rem;
+  color: #210A72;
+}
+
+.btn-goUp {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  background-color: #210A72;
+  color: #A5D6E4;
 }
 
 /*# sourceMappingURL=style.css.map */

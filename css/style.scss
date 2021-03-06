@@ -13,7 +13,7 @@ $color-1:#A5D6E4;
 $color-2:#210A72;
 $color-3:#57F1B1;
 $color-4:#E68244;
-
+$max-width:900px;
 // placehorder
 
 %no-margin{
@@ -26,18 +26,24 @@ $color-4:#E68244;
 body{
     margin:0;
     padding:0;
+    background-color: #f3f3f3;
 }
 
 .parent-header{
     background-color: $color-1;
+    position: fixed;
+    top: 0;
+    z-index: 100;
     width: 100%;
+    margin: auto;
     
     .header{
-        max-width: 1140px;
+        max-width: $max-width;
         display:flex;
+        background-color: $color-1;
         justify-content: space-between;
         align-items: center;
-        margin: 0px auto;
+        margin: auto;
 
         img{
             height:50px
@@ -95,11 +101,12 @@ body{
     justify-content:center;
     align-items:center;
     min-height: 70vh;
+    margin-top: 80px;
 
     .home__text{
         padding:50px;
         color:white;
-        font-family: 'Lato', sans-serif;
+        font-family: 'Kumbh Sans', sans-serif;
         h4{
             font-size:5rem;
             @extend %no-margin;
@@ -112,14 +119,21 @@ body{
 
         .home__link{
             text-decoration: none;
-            font-size:1rem;
             padding:15px 35px;
             background:$color-1;
             margin:10px 30px;
+            border:2px solid transparent;
             color:$color-2;
             font: {
-                family: 'Roboto', sans-serif;
-                weight:700;
+                family: 'Kumbh Sans', sans-serif;
+                weight:500;
+                size:1rem;
+            }
+
+            &:hover{
+                border:2px solid $color-1;
+                color: $color-1;
+                background-color: $color-2;
             }
         }
     }
@@ -136,7 +150,7 @@ body{
     .whatWeHave{
         display: flex;
         justify-content:center;
-        max-width: 1140px;
+        max-width: $max-width;
         margin:auto;
 
         &__option{
@@ -145,7 +159,7 @@ body{
             background-color: $color-2;
             color: $color-1;
             align-items:center;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Kumbh Sans', sans-serif;
 
             .fas{
                 font-size:80px;
@@ -168,4 +182,201 @@ body{
         
         }
     }
+}
+
+// formulaire rendez-vous style 
+
+
+.parent-form{
+    margin:50px auto; 
+    max-width: $max-width;
+    display: flex;
+    
+
+    .form__image{
+        background-image: url('/img/for-professionals-1000x700.jpg');
+        background-position:center center;
+        background-size: cover;
+        width:40%;
+
+    }
+
+    .form__block{
+
+        // padding:0px 30px;
+        flex: 1;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-weight: 900;
+        background-color: white;
+
+        h4{
+            @extend %no-margin;
+            color: $color-1;
+            background-color: $color-2;
+            padding:20px 25px;
+            font-size:1.4rem;
+            margin-bottom:20px;
+            
+        }
+        form{
+            padding:0px 30px;
+            div{
+                display: flex;
+                justify-content:space-between
+            }
+
+
+            input[type='text'],textarea{
+                // width: 300px;
+                padding:15px 10px;
+                margin:10px 0px;
+                color: $color-2;
+                border:1px solid transparent;
+                background-color: rgba(238, 238, 238, 0.61);
+                font-size: 1rem;
+                font-family: 'Kumbh Sans', sans-serif;
+
+                &:focus{
+                    outline:3px solid $color-2;
+                }
+            }
+            input[type='text']{
+                width: 300px;
+            }
+            textarea{
+                width: 650px;
+            }
+        }
+
+        button{
+            width:200px;
+            padding:15px 25px;
+            background-color: $color-2;
+            color: $color-1;
+            font-size: 1rem;
+            font-family: 'Kumbh Sans', sans-serif;
+            font-weight: 700;
+            border: none;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+    }
+}
+
+// galerie bloc style
+
+.parent-galerie{
+    width: 100%;
+    h4{
+        text-align: center;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-size: 4rem;
+        margin: 0;
+        color:$color-2;
+    }
+    .galerie{
+        max-width: $max-width;
+        display: flex;
+        flex-wrap: wrap;
+        margin:auto;
+
+        &__item{
+            background-image: url('/img/for-professionals-1000x700.jpg');
+            background-position: center center;
+            background-size: cover;
+            margin: 15px auto;
+            width: 300px;
+            height:300px
+        }
+    }
+}
+
+// bloc urgence
+
+.parent-urgence{
+    background-image: url('/img/826909-hospital-wallpapers-1920x1080-hd.jpg');
+    background-position: center center;
+    background-size: cover;
+    margin-top:80px;
+    max-width:100%;
+    padding:100px;
+
+    .urgence{
+        font-family: 'Kumbh Sans', sans-serif;
+        font-size:3.5rem;
+        color:white;
+    }
+}
+
+// bloc ce que nous faisons
+
+.parent-whatWeDo{
+    width: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+    &>h4{
+        font-size:4rem;
+        color:$color-2;
+        text-align:center;
+    }
+    .whatWeDo{
+        font-family: 'Kumbh Sans', sans-serif;
+        display: flex;
+        max-width: $max-width;
+        justify-content:space-between;
+        margin: auto;
+
+        &__item{
+            padding:40px;
+            width:280px;
+            text-align: center;
+            color:$color-2;
+            background-color: white;
+            i{
+                font-size: 3rem;
+            }
+
+            h4{
+                margin-top: 5px;
+                font-size: 2rem;
+            }
+
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
+
+.parent-footer{
+    width:100%;
+    background-color: $color-1;
+
+    .footer{
+        max-width: $max-width;
+        min-height: 300px;
+        margin-top: auto;
+
+
+        h4{
+            text-align: center;
+            padding-top: 90px;
+            font-size: 3rem;
+            color: $color-2;
+        }
+    }
+}
+
+.btn-goUp{
+    width:50px;
+    height:50px;
+    display: block;
+    border-radius:50%;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    right:20px;
+    bottom: 100px;
+    background-color: $color-2;
+    color:$color-1;
 }
