@@ -18,6 +18,9 @@
     .home__text{
         padding:50px;
         color:white;
+        opacity: 0;
+        transform: scale(.1);
+        transition:2s all ease;
         font-family: 'Kumbh Sans', sans-serif;
         h4{
             font-size:5rem;
@@ -58,12 +61,16 @@
 .parent_whatWeHave{
     width:100%;
     background-color: $color-2;
+    overflow: hidden;
 
     .whatWeHave{
         display: flex;
         justify-content:center;
         max-width: $max-width;
         margin:auto;
+        opacity: 0;
+        transform: translateY(200px);
+        transition:.8s all;
 
         &__option{
             padding:10px;
@@ -226,6 +233,7 @@
 .parent-whatWeDo{
     width: 100%;
     font-family: 'Kumbh Sans', sans-serif;
+    overflow:hidden;
     &>h4{
         font-size:4rem;
         color:$color-2;
@@ -237,6 +245,9 @@
         max-width: $max-width;
         justify-content:space-between;
         margin: auto;
+        opacity: 0;
+        transform: translateX(-900px);
+        transition: 1s all;
 
         &__item{
             padding:40px;

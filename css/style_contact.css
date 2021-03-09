@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Manrope&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
-.parent-header .header .header__contact h4 {
+.parent-form .form__block h4, .parent-header .header .header__contact h4 {
   margin: 0;
   padding: 0;
 }
@@ -88,6 +88,7 @@ body {
   height: 50px;
   display: block;
   border-radius: 50%;
+  border: 2.5px solid white;
   text-align: center;
   line-height: 50px;
   position: fixed;
@@ -95,52 +96,72 @@ body {
   bottom: 100px;
   background-color: #05001a;
   color: white;
+  transition: 0.3s all;
+}
+.btn-goUp:hover {
+  transform: scale(1.05);
 }
 
-.about {
-  max-width: 1000px;
+.parent-form {
   margin: 150px auto;
+  max-width: 1000px;
   display: flex;
 }
-.about__item > img {
-  max-width: 450px;
+.parent-form .form__image {
+  background-image: url("/img/for-professionals-1000x700.jpg");
+  background-position: center center;
+  background-size: cover;
+  width: 50%;
 }
-.about__item h4 {
-  font-size: 4rem;
-  margin: 0;
+.parent-form .form__block {
+  flex: 1;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 900;
+  background-color: white;
 }
-.about__item p {
-  font-weight: 500;
+.parent-form .form__block h4 {
+  color: white;
+  background-color: #05001a;
+  padding: 20px 25px;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
 }
-
-.historique {
-  max-width: 1000px;
-  margin: auto;
+.parent-form .form__block form {
+  padding: 0px 30px;
 }
-.historique h4 {
-  font-size: 4rem;
-}
-.historique p {
-  font-weight: 500;
-}
-
-.parent-partener {
-  max-width: 1000px;
-  margin: auto;
-}
-.parent-partener h4 {
-  font-size: 4rem;
-}
-.parent-partener .partener {
+.parent-form .form__block form div {
   display: flex;
   justify-content: space-between;
 }
-.parent-partener .partener__item {
+.parent-form .form__block form input[type=text], .parent-form .form__block form textarea {
+  padding: 15px 10px;
+  margin: 10px 0px;
+  color: #05001a;
+  border: 1px solid transparent;
+  background-color: rgba(238, 238, 238, 0.61);
+  font-size: 1rem;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.parent-form .form__block form input[type=text]:focus, .parent-form .form__block form textarea:focus {
+  outline: 3px solid #05001a;
+}
+.parent-form .form__block form input[type=text] {
+  width: 420px;
+}
+.parent-form .form__block form textarea {
+  width: 100%;
+}
+.parent-form .form__block button {
   width: 200px;
-  height: 200px;
-  background-image: url("/img/826909-hospital-wallpapers-1920x1080-hd.jpg");
-  background-position: center center;
-  background-size: cover;
+  padding: 15px 25px;
+  background-color: #05001a;
+  color: white;
+  font-size: 1rem;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  border: none;
+  display: block;
+  margin-bottom: 15px;
 }
 
-/*# sourceMappingURL=style_about.css.map */
+/*# sourceMappingURL=style_contact.css.map */

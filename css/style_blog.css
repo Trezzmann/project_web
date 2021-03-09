@@ -88,6 +88,7 @@ body {
   height: 50px;
   display: block;
   border-radius: 50%;
+  border: 2.5px solid white;
   text-align: center;
   line-height: 50px;
   position: fixed;
@@ -95,52 +96,32 @@ body {
   bottom: 100px;
   background-color: #05001a;
   color: white;
+  transition: 0.3s all;
+}
+.btn-goUp:hover {
+  transform: scale(1.05);
 }
 
-.about {
-  max-width: 1000px;
-  margin: 150px auto;
-  display: flex;
+.parent-blog {
+  margin-top: 110px;
 }
-.about__item > img {
-  max-width: 450px;
-}
-.about__item h4 {
-  font-size: 4rem;
-  margin: 0;
-}
-.about__item p {
-  font-weight: 500;
-}
-
-.historique {
+.parent-blog .blog {
   max-width: 1000px;
   margin: auto;
 }
-.historique h4 {
-  font-size: 4rem;
+.parent-blog .blog__item {
+  background-color: white;
+  box-sizing: border-box;
+  display: block;
+  margin: 20px 0px;
+  text-decoration: none;
+  color: #05001a;
+  padding: 20px;
+  transition: 0.1s all;
 }
-.historique p {
-  font-weight: 500;
-}
-
-.parent-partener {
-  max-width: 1000px;
-  margin: auto;
-}
-.parent-partener h4 {
-  font-size: 4rem;
-}
-.parent-partener .partener {
-  display: flex;
-  justify-content: space-between;
-}
-.parent-partener .partener__item {
-  width: 200px;
-  height: 200px;
-  background-image: url("/img/826909-hospital-wallpapers-1920x1080-hd.jpg");
-  background-position: center center;
-  background-size: cover;
+.parent-blog .blog__item:hover {
+  transform: scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-/*# sourceMappingURL=style_about.css.map */
+/*# sourceMappingURL=style_blog.css.map */

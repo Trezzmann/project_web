@@ -97,50 +97,30 @@ body {
   color: white;
 }
 
-.about {
-  max-width: 1000px;
-  margin: 150px auto;
-  display: flex;
+.parent-galerie {
+  width: 100%;
+  margin-top: 100px;
 }
-.about__item > img {
-  max-width: 450px;
-}
-.about__item h4 {
+.parent-galerie h4 {
+  text-align: center;
+  font-family: "Kumbh Sans", sans-serif;
   font-size: 4rem;
   margin: 0;
+  color: #05001a;
 }
-.about__item p {
-  font-weight: 500;
-}
-
-.historique {
+.parent-galerie .galerie {
   max-width: 1000px;
-  margin: auto;
-}
-.historique h4 {
-  font-size: 4rem;
-}
-.historique p {
-  font-weight: 500;
-}
-
-.parent-partener {
-  max-width: 1000px;
-  margin: auto;
-}
-.parent-partener h4 {
-  font-size: 4rem;
-}
-.parent-partener .partener {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
 }
-.parent-partener .partener__item {
-  width: 200px;
-  height: 200px;
-  background-image: url("/img/826909-hospital-wallpapers-1920x1080-hd.jpg");
+.parent-galerie .galerie__item {
+  background-image: url("/img/for-professionals-1000x700.jpg");
   background-position: center center;
   background-size: cover;
+  margin: 15px auto;
+  width: 300px;
+  height: 300px;
 }
 
-/*# sourceMappingURL=style_about.css.map */
+/*# sourceMappingURL=style_gallery.css.map */

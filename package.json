@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch css/style_services.scss:css/style_services.css --style expanded"
+    "about":"sass --watch css/style_about.scss:css/style_about.css --style expanded",
+    "index":"sass --watch css/style.scss:css/style.css --style expanded",
+    "service":"sass --watch css/style_services.scss:css/style_services.css --style expanded",
+    "gallery":"sass --watch css/style_gallery.scss:css/style_gallery.css --style expanded",
+    "blog":"sass --watch css/style_blog.scss:css/style_blog.css --style expanded",
+    "contact":"sass --watch css/style_contact.scss:css/style_contact.css --style expanded"
   },
   "keywords": [],
   "author": "",

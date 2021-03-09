@@ -1,0 +1,30 @@
+@import 'header';
+@import 'footer';
+
+
+// blogs style
+
+.parent-blog{
+    margin-top:110px;
+    .blog{
+        max-width: $max-width;
+        margin: auto;
+        
+
+        &__item{
+            background-color: white;
+            box-sizing: border-box;
+            display:block;
+            margin: 20px 0px;
+            text-decoration: none;
+            color:$color-2;
+            padding:20px;
+            transition:.1s all;
+            &:hover{
+                transform: scale(1.01);
+                // padding:24px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            }
+        }
+    }
+}
