@@ -27,9 +27,9 @@ window.onload = ()=>{
         let blocHeigth = ParentwhatWeDo.getBoundingClientRect().top
         let winHeight = window.innerHeight/4
         if (blocHeigth < winHeight) {
-
+            
             whatWeDo.style.opacity = "1";
-            whatWeDo.style.transform = "translateY(0)"
+            whatWeDo.style.transform = "translateX(0)"
         }
     }     
 

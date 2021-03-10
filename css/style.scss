@@ -236,6 +236,7 @@
     overflow:hidden;
     &>h4{
         font-size:4rem;
+        margin:35px 0px;
         color:$color-2;
         text-align:center;
     }
@@ -246,7 +247,7 @@
         justify-content:space-between;
         margin: auto;
         opacity: 0;
-        transform: translateX(-900px);
+        transform: translateY(900px);
         transition: 1s all;
 
         &__item{
