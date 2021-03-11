@@ -1,5 +1,4 @@
 window.onload = ()=>{
-
     
 
     const homeText = document.querySelector('.home__text')
@@ -25,7 +24,7 @@ window.onload = ()=>{
 
         // animation for what we do block
         let blocHeigth = ParentwhatWeDo.getBoundingClientRect().top
-        let winHeight = window.innerHeight/4
+        let winHeight = window.innerHeight/3.4
         if (blocHeigth < winHeight) {
             
             whatWeDo.style.opacity = "1";

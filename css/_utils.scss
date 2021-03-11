@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Manrope&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+// font-family: 'Kumbh Sans', sans-serif;
+// font-family: 'Manrope', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Lato', sans-serif;
+// variables
+
+$color-1:white;
+$color-2:#05001a;
+$color-3:#57F1B1;
+$color-4:#E68244;
+$max-width:1000px;
+
+@mixin device-max-900{
+    @media screen and (max-width:900px){
+        @content;
+    }
+}
+
+@mixin device-max-700{
+    @media screen and (max-width:700px){
+        @content;
+    }
+}
+
+@mixin device-max-320{
+    @media screen and (max-width:320px){
+        @content;
+    }
+}

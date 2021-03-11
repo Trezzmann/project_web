@@ -1,7 +1,8 @@
 // fonts importation
 
-
+@import 'utils';
 @import 'header';
+@import 'footer';
 // bloc home style
 
 .home{
@@ -15,6 +16,13 @@
     min-height: 70vh;
     margin-top: 80px;
 
+    @include device-max-900{
+        margin-top:30px;
+        min-height: 50vh;
+        // min-width:100%;
+    }
+
+
     .home__text{
         padding:50px;
         color:white;
@@ -25,6 +33,10 @@
         h4{
             font-size:5rem;
             @extend %no-margin;
+            @include device-max-700{
+                font-size: 3rem;
+                text-align: center;
+            }
         }
 
         .home__links{
@@ -36,7 +48,7 @@
             text-decoration: none;
             padding:15px 35px;
             background:$color-1;
-            margin:10px 30px;
+            margin:auto;
             border:2px solid transparent;
             color:$color-2;
             font: {
@@ -49,6 +61,11 @@
                 border:2px solid $color-1;
                 color: $color-1;
                 background-color: $color-2;
+            }
+
+            @include device-max-700{
+                padding:5px 10px;
+                font-size:.8rem;
             }
         }
     }
@@ -72,13 +89,22 @@
         transform: translateY(200px);
         transition:.8s all;
 
+        @include device-max-900{
+            flex-direction: column;
+        }
+
         &__option{
             padding:10px;
+            width:fit-content;
             display:flex;
             background-color: $color-2;
             color: $color-1;
             align-items:center;
             font-family: 'Kumbh Sans', sans-serif;
+
+            @include device-max-900{
+                width: 100%;
+            }
 
             .fas{
                 font-size:80px;
@@ -88,7 +114,8 @@
 
             .option__text{
                 padding:0px 30px 0px 0px;
-                color: $color-1; 
+                color: $color-1;
+                // font-size: 1rem;
             }
 
         &:nth-child(2){
@@ -118,15 +145,22 @@
         background-size: cover;
         width:40%;
 
+        @include device-max-900{
+            display:none;
+        }
+
     }
 
     .form__block{
 
-        // padding:0px 30px;
         flex: 1;
         font-family: 'Kumbh Sans', sans-serif;
         font-weight: 900;
         background-color: white;
+
+        @include device-max-900{
+            width:100%;
+        }
 
         h4{
             @extend %no-margin;
@@ -139,9 +173,14 @@
         }
         form{
             padding:0px 30px;
+            box-sizing: border-box;
             div{
                 display: flex;
-                justify-content:space-between
+                justify-content:space-between;
+
+                @include device-max-900{
+                    flex-direction: column;
+                }
             }
 
 
@@ -161,9 +200,12 @@
             }
             input[type='text']{
                 width: 300px;
+                @include device-max-900{
+                    width: 100%;
+                }
             }
             textarea{
-                width: 650px;
+                width: auto;
             }
         }
 
@@ -206,7 +248,13 @@
             background-size: cover;
             margin: 15px auto;
             width: 300px;
-            height:300px
+            height:300px;
+
+           
+            @include device-max-900{
+                width:100%;
+                margin: 5px;
+            }
         }
     }
 }
@@ -221,10 +269,18 @@
     max-width:100%;
     padding:100px;
 
+    @include device-max-900{
+        padding:60px;
+    }
+
     .urgence{
         font-family: 'Kumbh Sans', sans-serif;
         font-size:3.5rem;
         color:white;
+        transition: .3s all;
+        @include device-max-700{
+            font-size:2rem;
+        }
     }
 }
 
@@ -239,6 +295,9 @@
         margin:35px 0px;
         color:$color-2;
         text-align:center;
+        @include device-max-700{
+            font-size: 3rem;
+        }
     }
     .whatWeDo{
         font-family: 'Kumbh Sans', sans-serif;
@@ -248,14 +307,19 @@
         margin: auto;
         opacity: 0;
         transform: translateY(900px);
-        transition: 1s all;
+        transition: .5s all;
+
+        @include device-max-700{
+            flex-direction: column;
+            max-width: 100%;
+        }
 
         &__item{
             padding:40px;
-            width:280px;
             text-align: center;
             color:$color-2;
             background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
             i{
                 font-size: 3rem;
             }
@@ -268,42 +332,12 @@
             p{
                 text-align: center;
             }
+
+            @include device-max-700{
+                max-width: 100%;
+                justify-content:center;
+            }
         }
     }
 }
 
-.parent-footer{
-    width:100%;
-    background-color: $color-2;
-    margin-top: 50px;
-
-    .footer{
-        max-width: $max-width;
-        min-height: 300px;
-        display: flex;
-        margin:auto;
-        justify-content:space-between;
-
-
-        &__item{
-            text-align: center;
-            // padding-padding: 90px;
-            // font-size: 3rem;
-            color: $color-1;
-        }
-    }
-}
-
-.btn-goUp{
-    width:50px;
-    height:50px;
-    display: block;
-    border-radius:50%;
-    text-align: center;
-    line-height: 50px;
-    position: fixed;
-    right:20px;
-    bottom: 100px;
-    background-color: $color-2;
-    color:$color-1;
-}
