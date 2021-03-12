@@ -6,19 +6,25 @@
 
 .parent-whatWeDo{
     width: 100%;
-    // font-family: 'Kumbh Sans', sans-serif;
     margin-top:150px;
     &>h4{
         font-size:4rem;
         color:$color-2;
         text-align:center;
+        @include device-max-700{
+            font-size: 3rem;
+        }
     }
     .whatWeDo{
-        // font-family: 'Kumbh Sans', sans-serif;
+        font-family: $font;
         display: flex;
         max-width: $max-width;
         justify-content:space-between;
         margin: auto;
+
+        @include device-max-700{
+            flex-direction: column;
+        }
 
         &__item{
             padding:40px;
@@ -26,6 +32,10 @@
             text-align: center;
             color:$color-2;
             background-color: white;
+            @include device-max-700{
+                width: 100%;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
             i{
                 font-size: 3rem;
             }

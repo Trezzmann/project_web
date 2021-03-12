@@ -1,4 +1,4 @@
-window.onload = () => {
+
     const menuBtn = document.querySelector('.fa-bars')
     const closeBtn = document.querySelector('.fa-times')
     const menu = document.querySelector('.header__menu')
@@ -12,4 +12,3 @@ window.onload = () => {
         menu.style.top = "-1000px"
         menu.style.padding = "20px"
     }
-}

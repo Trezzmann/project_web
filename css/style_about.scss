@@ -7,20 +7,32 @@
 
 .about{
     max-width: $max-width;
-    margin:150px auto;
+    margin:110px auto 0px;
     display: flex;
+    @include device-max-900{
+        flex-direction: column;
+        padding: 15px;
+        // margin:0px;
+    }
 
     &__item{
 
         &>img{
             max-width:450px;
+            @include device-max-900{
+                max-width: 100%;
+            }
         }
         h4{
             font-size: 4rem;
             margin: 0;
+            @include device-max-900{
+                font-size: 3rem;
+            }
         }
         p{
             font-weight: 500;
+            line-height: 1.6;
         }
     }
 }
@@ -31,13 +43,21 @@
 .historique{
     max-width: $max-width;
     margin:auto;
+    @include device-max-900{
+        padding: 15px;
+    }
 
     h4{
         font-size: 4rem;
+        @include device-max-900{
+            font-size: 3rem;
+            margin: 10px 0px;
+        }
     }
 
     p{
         font-weight: 500;
+        line-height: 1.6;
     }
 }
 
@@ -46,21 +66,36 @@
 .parent-partener{
     max-width: $max-width;
     margin:auto;
-
+    @include device-max-900{
+        padding:15px;
+    }
     h4{
         font-size: 4rem;
+        @include device-max-900{
+            font-size: 2.2rem;
+            margin: 10px 0px;
+        }
     }
     .partener{
         
         display:flex;
-        justify-content:space-between;
+        // justify-content:space-between;
+        @include device-max-900{
+            flex-wrap: wrap;
+            align-items:center;
+        }
 
         &__item{
-            width:200px;
+            width:30%;
             height:200px;
+            margin: 5px;
             background-image: url('/img/826909-hospital-wallpapers-1920x1080-hd.jpg');
             background-position:center center;
             background-size: cover;
+            @include device-max-900{
+                width: 100%;
+            }
+            
         }
     }
 }

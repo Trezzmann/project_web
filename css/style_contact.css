@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f3f3f3;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans", "Manrope", "Roboto", "Lato", sans-serif;
 }
 
 .parent-header {
@@ -162,7 +162,7 @@ body {
 }
 
 .parent-form {
-  margin: 150px auto;
+  margin: 100px auto;
   max-width: 1000px;
   display: flex;
 }
@@ -170,13 +170,23 @@ body {
   background-image: url("/img/for-professionals-1000x700.jpg");
   background-position: center center;
   background-size: cover;
-  width: 50%;
+  width: 40%;
+}
+@media screen and (max-width: 900px) {
+  .parent-form .form__image {
+    display: none;
+  }
 }
 .parent-form .form__block {
   flex: 1;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 900;
   background-color: white;
+}
+@media screen and (max-width: 900px) {
+  .parent-form .form__block {
+    width: 100%;
+  }
 }
 .parent-form .form__block h4 {
   color: white;
@@ -187,10 +197,16 @@ body {
 }
 .parent-form .form__block form {
   padding: 0px 30px;
+  box-sizing: border-box;
 }
 .parent-form .form__block form div {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+  .parent-form .form__block form div {
+    flex-direction: column;
+  }
 }
 .parent-form .form__block form input[type=text], .parent-form .form__block form textarea {
   padding: 15px 10px;
@@ -205,10 +221,20 @@ body {
   outline: 3px solid #05001a;
 }
 .parent-form .form__block form input[type=text] {
-  width: 420px;
+  width: 47%;
+}
+@media screen and (max-width: 900px) {
+  .parent-form .form__block form input[type=text] {
+    width: 100%;
+  }
 }
 .parent-form .form__block form textarea {
   width: 100%;
+}
+@media screen and (max-width: 900px) {
+  .parent-form .form__block form textarea {
+    width: 100%;
+  }
 }
 .parent-form .form__block button {
   width: 200px;

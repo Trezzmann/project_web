@@ -163,48 +163,99 @@ body {
 
 .about {
   max-width: 1000px;
-  margin: 150px auto;
+  margin: 110px auto 0px;
   display: flex;
+}
+@media screen and (max-width: 900px) {
+  .about {
+    flex-direction: column;
+    padding: 15px;
+  }
 }
 .about__item > img {
   max-width: 450px;
+}
+@media screen and (max-width: 900px) {
+  .about__item > img {
+    max-width: 100%;
+  }
 }
 .about__item h4 {
   font-size: 4rem;
   margin: 0;
 }
+@media screen and (max-width: 900px) {
+  .about__item h4 {
+    font-size: 3rem;
+  }
+}
 .about__item p {
   font-weight: 500;
+  line-height: 1.6;
 }
 
 .historique {
   max-width: 1000px;
   margin: auto;
 }
+@media screen and (max-width: 900px) {
+  .historique {
+    padding: 15px;
+  }
+}
 .historique h4 {
   font-size: 4rem;
 }
+@media screen and (max-width: 900px) {
+  .historique h4 {
+    font-size: 3rem;
+    margin: 10px 0px;
+  }
+}
 .historique p {
   font-weight: 500;
+  line-height: 1.6;
 }
 
 .parent-partener {
   max-width: 1000px;
   margin: auto;
 }
+@media screen and (max-width: 900px) {
+  .parent-partener {
+    padding: 15px;
+  }
+}
 .parent-partener h4 {
   font-size: 4rem;
 }
+@media screen and (max-width: 900px) {
+  .parent-partener h4 {
+    font-size: 2.2rem;
+    margin: 10px 0px;
+  }
+}
 .parent-partener .partener {
   display: flex;
-  justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+  .parent-partener .partener {
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 .parent-partener .partener__item {
-  width: 200px;
+  width: 30%;
   height: 200px;
+  margin: 5px;
   background-image: url("/img/826909-hospital-wallpapers-1920x1080-hd.jpg");
   background-position: center center;
   background-size: cover;
+}
+@media screen and (max-width: 900px) {
+  .parent-partener .partener__item {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style_about.css.map */

@@ -8,7 +8,7 @@
 
 
 .parent-form{
-    margin:150px auto; 
+    margin:100px auto; 
     max-width: $max-width;
     display: flex;
     
@@ -17,17 +17,24 @@
         background-image: url('/img/for-professionals-1000x700.jpg');
         background-position:center center;
         background-size: cover;
-        width:50%;
+        width:40%;
+
+        @include device-max-900{
+            display:none;
+        }
 
     }
 
     .form__block{
 
-        // padding:0px 30px;
         flex: 1;
         font-family: 'Kumbh Sans', sans-serif;
         font-weight: 900;
         background-color: white;
+
+        @include device-max-900{
+            width:100%;
+        }
 
         h4{
             @extend %no-margin;
@@ -40,9 +47,14 @@
         }
         form{
             padding:0px 30px;
+            box-sizing: border-box;
             div{
                 display: flex;
-                justify-content:space-between
+                justify-content:space-between;
+
+                @include device-max-900{
+                    flex-direction: column;
+                }
             }
 
 
@@ -61,10 +73,16 @@
                 }
             }
             input[type='text']{
-                width: 420px;
+                width: 47%;
+                @include device-max-900{
+                    width: 100%;
+                }
             }
             textarea{
                 width: 100%;
+                @include device-max-900{
+                    width: 100%;
+                }
             }
         }
 
