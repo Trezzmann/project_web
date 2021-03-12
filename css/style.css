@@ -278,7 +278,7 @@ body {
   display: flex;
 }
 .parent-form .form__image {
-  background-image: url("/img/for-professionals-1000x700.jpg");
+  background-image: url("/img/Hospital-Beds.jpg");
   background-position: center center;
   background-size: cover;
   width: 40%;
@@ -332,7 +332,7 @@ body {
   outline: 3px solid #05001a;
 }
 .parent-form .form__block form input[type=text] {
-  width: 300px;
+  width: 46%;
 }
 @media screen and (max-width: 900px) {
   .parent-form .form__block form input[type=text] {
@@ -340,7 +340,7 @@ body {
   }
 }
 .parent-form .form__block form textarea {
-  width: auto;
+  width: 100%;
 }
 .parent-form .form__block button {
   width: 200px;
@@ -353,6 +353,11 @@ body {
   border: none;
   display: block;
   margin-bottom: 15px;
+}
+@media screen and (max-width: 700px) {
+  .parent-form .form__block button {
+    width: 100%;
+  }
 }
 
 .parent-galerie {
@@ -372,12 +377,29 @@ body {
   margin: auto;
 }
 .parent-galerie .galerie__item {
-  background-image: url("/img/for-professionals-1000x700.jpg");
   background-position: center center;
   background-size: cover;
   margin: 15px auto;
-  width: 300px;
-  height: 300px;
+  width: 320px;
+  height: 250px;
+}
+.parent-galerie .galerie__item:nth-child(1) {
+  background-image: url("/img/88176.jpg");
+}
+.parent-galerie .galerie__item:nth-child(2) {
+  background-image: url("/img/unnamed.jpg");
+}
+.parent-galerie .galerie__item:nth-child(3) {
+  background-image: url("/img/Hospital-Beds.jpg");
+}
+.parent-galerie .galerie__item:nth-child(4) {
+  background-image: url("/img/hospital.jpg");
+}
+.parent-galerie .galerie__item:nth-child(5) {
+  background-image: url("/img/Moore-CovidAfrica.jpg");
+}
+.parent-galerie .galerie__item:nth-child(6) {
+  background-image: url("/img/file-20210111-23-1s1uykk.jpg");
 }
 @media screen and (max-width: 900px) {
   .parent-galerie .galerie__item {

@@ -140,7 +140,7 @@
     
 
     .form__image{
-        background-image: url('/img/for-professionals-1000x700.jpg');
+        background-image: url('/img/Hospital-Beds.jpg');
         background-position:center center;
         background-size: cover;
         width:40%;
@@ -199,13 +199,13 @@
                 }
             }
             input[type='text']{
-                width: 300px;
+                width: 46%;
                 @include device-max-900{
                     width: 100%;
                 }
             }
             textarea{
-                width: auto;
+                width: 100%;
             }
         }
 
@@ -220,6 +220,9 @@
             border: none;
             display: block;
             margin-bottom: 15px;
+            @include device-max-700{
+                width: 100%;
+            }
         }
 
     }
@@ -243,12 +246,31 @@
         margin:auto;
 
         &__item{
-            background-image: url('/img/for-professionals-1000x700.jpg');
             background-position: center center;
             background-size: cover;
             margin: 15px auto;
-            width: 300px;
-            height:300px;
+            width: 320px;
+            height:250px;
+            &:nth-child(1){
+                background-image: url('/img/88176.jpg');
+            }
+            &:nth-child(2){
+                background-image: url('/img/unnamed.jpg');
+            }
+            &:nth-child(3){
+                background-image: url('/img/Hospital-Beds.jpg');
+            }
+            &:nth-child(4){
+                background-image: url('/img/hospital.jpg');
+            }
+            &:nth-child(5){
+                background-image: url('/img/Moore-CovidAfrica.jpg');
+            }
+            &:nth-child(6){
+                background-image: url('/img/file-20210111-23-1s1uykk.jpg');
+            }
+
+
 
            
             @include device-max-900{

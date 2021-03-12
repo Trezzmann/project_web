@@ -1,4 +1,4 @@
-
+    const btnUp = document.querySelector('.btn-goUp')
     const menuBtn = document.querySelector('.fa-bars')
     const closeBtn = document.querySelector('.fa-times')
     const menu = document.querySelector('.header__menu')
@@ -11,4 +11,11 @@
     closeBtn.onclick = () => {
         menu.style.top = "-1000px"
         menu.style.padding = "20px"
+    }
+
+    btnUp.onclick = () => {
+        document.documentElement.scrollTo({
+            top:0,
+            behavior:"smooth"
+        })
     }
